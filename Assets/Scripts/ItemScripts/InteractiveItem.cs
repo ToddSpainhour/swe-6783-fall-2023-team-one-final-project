@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -19,7 +20,7 @@ public class NewBehaviourScript : MonoBehaviour
     public void OnMouseEnter()
     {
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
-        //Debug.Log("onMouseEnter in InteractiveItem");
+        Debug.Log("onMouseEnter in InteractiveItem");
     }
 
 
@@ -29,7 +30,7 @@ public class NewBehaviourScript : MonoBehaviour
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = "";
         // this also clears out the desciption; need to find a way to fade this out instead
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = "";
-        //Debug.Log("onMouseExit in InteractiveItem");
+        Debug.Log("onMouseExit in InteractiveItem");
     }
 
 
@@ -39,4 +40,12 @@ public class NewBehaviourScript : MonoBehaviour
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = itemDescription;
         // hmm how to fade the text out after a certain period??
     }
+
+    //public void OnPointerEnter(PointerEventData eventData)
+    //{
+    //    //Cursor.SetCursor(cursorCircleTransparentWhite, Vector2.zero, CursorMode.Auto);
+    //    DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
+    //    Debug.Log("OnPointerEnter in CursorManager");
+    //}
+
 }
