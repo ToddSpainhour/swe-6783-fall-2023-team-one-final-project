@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class NewBehaviourScript : MonoBehaviour
 {
@@ -10,28 +11,41 @@ public class NewBehaviourScript : MonoBehaviour
     public bool isInventoryEligible;
 
 
-    // this creates a slot in Unity where you can connect it to a GameObject by dragging and dropping
-    // it tells this file what GameObject you're talking about
+    // this creates a slot in Unity to tell this file what GameObject you're talking about
     public GameObject DynamicItemName;
     public GameObject DynamicItemDescription;
 
 
+    // displays dynamicItemName
     public void OnMouseEnter()
     {
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
+        Debug.Log("onMouseEnter in InteractiveItem");
     }
 
 
+    // clears dynamicItemName
     public void OnMouseExit()
     {
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = "";
+        // this also clears out the desciption; need to find a way to fade this out instead
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = "";
+        Debug.Log("onMouseExit in InteractiveItem");
     }
 
 
+    // displays dynamicItemDescription
     public void OnMouseUp()
     {
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = itemDescription;
         // hmm how to fade the text out after a certain period??
     }
+
+    //public void OnPointerEnter(PointerEventData eventData)
+    //{
+    //    //Cursor.SetCursor(cursorCircleTransparentWhite, Vector2.zero, CursorMode.Auto);
+    //    DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
+    //    Debug.Log("OnPointerEnter in CursorManager");
+    //}
+
 }
