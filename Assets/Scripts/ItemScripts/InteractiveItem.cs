@@ -14,13 +14,14 @@ public class NewBehaviourScript : MonoBehaviour
     // this creates a slot in Unity to tell this file what GameObject you're talking about
     public GameObject DynamicItemName;
     public GameObject DynamicItemDescription;
+    public Inventory inventory;
 
 
     // displays dynamicItemName
     public void OnMouseEnter()
     {
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
-        Debug.Log("onMouseEnter in InteractiveItem");
+        //Debug.Log("onMouseEnter in InteractiveItem");
     }
 
 
@@ -30,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = "";
         // this also clears out the desciption; need to find a way to fade this out instead
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = "";
-        Debug.Log("onMouseExit in InteractiveItem");
+        //Debug.Log("onMouseExit in InteractiveItem");
     }
 
 
@@ -38,14 +39,10 @@ public class NewBehaviourScript : MonoBehaviour
     public void OnMouseUp()
     {
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = itemDescription;
-        // hmm how to fade the text out after a certain period??
+
+        if (isInventoryEligible)
+        {
+            inventory.addItemToInventory(this.itemName);
+        } 
     }
-
-    //public void OnPointerEnter(PointerEventData eventData)
-    //{
-    //    //Cursor.SetCursor(cursorCircleTransparentWhite, Vector2.zero, CursorMode.Auto);
-    //    DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
-    //    Debug.Log("OnPointerEnter in CursorManager");
-    //}
-
 }
