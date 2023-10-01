@@ -9,14 +9,14 @@ public class CursorManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Cursor.SetCursor(cursorCircleTransparentWhite, Vector2.zero, CursorMode.Auto);
-        Debug.Log("OnPointerEnter in CursorManager");
+        Vector2 hotspot = new Vector2(cursorCircleTransparentWhite.width / 2f, cursorCircleTransparentWhite.height / 2f);
+        Cursor.SetCursor(cursorCircleTransparentWhite, hotspot, CursorMode.Auto);
     }
 
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        Cursor.SetCursor(cursorPlusSignTransparentWhite, Vector2.zero, CursorMode.Auto);
-        Debug.Log("onPointerExit in CursorManager");
+        Vector2 hotspot = new Vector2(cursorPlusSignTransparentWhite.width / 2f, cursorPlusSignTransparentWhite.height / 2f);
+        Cursor.SetCursor(cursorPlusSignTransparentWhite, hotspot, CursorMode.Auto);
     }
 }
