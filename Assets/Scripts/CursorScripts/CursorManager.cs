@@ -9,6 +9,7 @@ public class CursorManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        //Debug.Log("is this hotspot only?");
         Cursor.SetCursor(cursorCircleTransparentWhite, Vector2.zero, CursorMode.Auto);
     }
 
