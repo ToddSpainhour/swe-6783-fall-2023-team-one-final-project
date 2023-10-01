@@ -1714,6 +1714,7 @@ GameObject:
   - component: {fileID: 2039840095}
   - component: {fileID: 2039840096}
   - component: {fileID: 2039840097}
+  - component: {fileID: 2039840098}
   m_Layer: 0
   m_Name: inventory-keycard
   m_TagString: Untagged
@@ -1804,6 +1805,7 @@ MonoBehaviour:
   itemDescription: Maybe this unlocks the door
   DynamicItemName: {fileID: 881044802}
   DynamicItemDescription: {fileID: 1507650827}
+  followMousescript: {fileID: 2039840098}
 --- !u!60 &2039840097
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1988,6 +1990,18 @@ PolygonCollider2D:
       - {x: 3.1499999, y: -1.35}
       - {x: 3.1499999, y: -1.3399999}
   m_UseDelaunayMesh: 0
+--- !u!114 &2039840098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039840093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8235839b04122d54699838f356519546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2103871056
 GameObject:
   m_ObjectHideFlags: 0

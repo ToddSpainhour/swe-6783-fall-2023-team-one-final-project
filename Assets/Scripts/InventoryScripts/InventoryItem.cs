@@ -10,6 +10,7 @@ public class InventoryItem : MonoBehaviour
 
     public GameObject DynamicItemName;
     public GameObject DynamicItemDescription;
+    public FollowMouse followMousescript;
 
 
     public void OnMouseEnter()
@@ -27,11 +28,31 @@ public class InventoryItem : MonoBehaviour
         Debug.Log("InventoryItem onMouseExit");
     }
 
+    public void OnMouseDown()
+    {
+        AttachKeyCardToCursor();
+    }
+
 
     public void OnMouseUp()
     {
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = itemDescription;
-        // hmm how to fade the text out after a certain period??
+        Debug.Log("you clicked on: " + itemName + " in the inventory!");
+        
+    }
+
+    public void AttachKeyCardToCursor()
+    {
+        Debug.Log("attach " + itemName + " to cursor");
+        followMousescript.enabled = true;
+        followMousescript.HaveIconFollowCursor();
+
+        // this "works" but only moves when you click. doesn't follow cursor
+        /*
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
+        transform.position = mousePosition;
+        */
     }
 
 
