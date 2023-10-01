@@ -6,7 +6,7 @@ public class CursorManager : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     public Texture2D cursorCircleTransparentWhite;
     public Texture2D cursorPlusSignTransparentWhite;
 
-
+    
     public void OnPointerEnter(PointerEventData eventData)
     {
         Vector2 hotspot = new Vector2(cursorCircleTransparentWhite.width / 2f, cursorCircleTransparentWhite.height / 2f);
