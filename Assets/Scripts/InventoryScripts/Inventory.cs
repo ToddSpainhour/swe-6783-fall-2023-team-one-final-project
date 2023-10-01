@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    //public bool[] isSlotEmpty;
-    public List<string> inventoryList;
+    public GameObject interactiveItem;
 
-    public void addItemToInventory(string itemName)
+    public bool[] isSlotEmpty;
+    public static List<GameObject> inventory;
+
+
+    void Awake()
     {
-        Debug.Log("you just ran the addItemToInventory method");
-
-        inventoryList.Add(itemName);
-
-        for (int i = 0; i < inventoryList.Count; i++)
-        {
-            Debug.Log($"inventory slot {i}: {inventoryList[i]}");
-        }
+        interactiveItem = GameObject.Find("InteractiveObject").GetComponent<GameObject>();
     }
+
+    public void OnMouseDown()
+    {
+        Debug.Log("interactive item name: " + interactiveItem.name);
+    }
+
 }
