@@ -23,4 +23,10 @@ public class FollowMouse : MonoBehaviour
         mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
         transform.position = mousePosition;
     }
+
+    public void OnMouseDown()
+    {
+        // this isn't being called after the inventory item is attached to the cursor
+        //Debug.Log("OnMouseDown inside FollowMouse.cs");
+    }
 }

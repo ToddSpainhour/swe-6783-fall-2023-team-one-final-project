@@ -1557,6 +1557,7 @@ GameObject:
   - component: {fileID: 1870370902}
   - component: {fileID: 1870370903}
   - component: {fileID: 1870370904}
+  - component: {fileID: 1870370906}
   m_Layer: 0
   m_Name: door-hotspot
   m_TagString: Untagged
@@ -1647,6 +1648,18 @@ PolygonCollider2D:
       - {x: 6.7931933, y: -2.5605142}
       - {x: 6.6905327, y: 0.9479373}
   m_UseDelaunayMesh: 0
+--- !u!114 &1870370906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870370899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8381ab19530adf24d82409e3b2d327ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994060409
 GameObject:
   m_ObjectHideFlags: 0
