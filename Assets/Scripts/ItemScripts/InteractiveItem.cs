@@ -21,17 +21,15 @@ public class NewBehaviourScript : MonoBehaviour
     public void OnMouseEnter()
     {
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = itemName;
-        //Debug.Log("onMouseEnter in InteractiveItem");
     }
 
 
-    // clears dynamicItemName
+    // clears out dynamicItemName and dynamicItemDesciption
     public void OnMouseExit()
     {
+
         DynamicItemName.GetComponent<UnityEngine.UI.Text>().text = "";
-        // this also clears out the desciption; need to find a way to fade this out instead
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = "";
-        //Debug.Log("onMouseExit in InteractiveItem");
     }
 
 
@@ -45,12 +43,8 @@ public class NewBehaviourScript : MonoBehaviour
             // this conditional is comparing the names over in the Hierarchy
             if(this.name == "keycard-from-play-area")
             {
-                //Debug.Log("the item you clicked was named Keycard. Turn this off and turn on the inventory keycard");
                 itemFromGamePlayAreaToInventoryScript.TransitionKeycardFromGamePlayAreaToInventory();
             }
         }
     }
-
-
-
 }
