@@ -5,45 +5,23 @@ using UnityEngine;
 
 public class AdvanceThroughGame : MonoBehaviour
 {
-    // needs to know about door hotspot
-    //public GameObject doorHotspot;
-    // needs to know about activeInventoryItem
-    //public ActiveInventoryItem activeInventoryItem;
-
-    //GameObject.
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // this class is attached to the door hotspot which for this room (Lobby) is the "win condition";
+    // it would make sense for each room to have it's own standalone file like
     public void OnMouseDown()
     {
         Debug.Log("inside advanceThroughGame class");
-        string value = ActiveInventoryItem.GetCurrentActiveInventoryItem();
-        //string value = activeInventoryItem.GetCurrentActiveInventoryItem();
-        //string value = activeInventoryItem.currentActiveInventoryItem;
+        string currentSelectedInventoryItem = ActiveInventoryItem.GetCurrentActiveInventoryItem();
 
-        Debug.Log("value: " + value);
-
-        if(value == "")
+        if(currentSelectedInventoryItem == "")
         {
-            Debug.Log("the value for active inventoryItem was a empty string");
-            //return;
+            return;
         }
         else
         {
-            //Debug.Log("the value for active inventoryItem was NOT an empty string and we'rein the else statement");
-            if (value == "Keycard")
+            if (currentSelectedInventoryItem == "Keycard")
             {
                 Debug.Log("yahoo. You win the room");
+                // advance to next scene
             }
         }
 
