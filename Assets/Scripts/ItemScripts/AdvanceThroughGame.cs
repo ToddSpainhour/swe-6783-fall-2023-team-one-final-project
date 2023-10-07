@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AdvanceThroughGame : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class AdvanceThroughGame : MonoBehaviour
             {
                 Debug.Log("yahoo. You win the room");
                 // advance to next scene
+                SceneManager.LoadScene("ToBeContinued");
             }
         }
 
