@@ -6,7 +6,7 @@ public class FollowMouse : MonoBehaviour
 {
     void Start()
     {
-        Debug.Log("FollowMouse just started");
+        //Debug.Log("FollowMouse just started");
     }
 
 

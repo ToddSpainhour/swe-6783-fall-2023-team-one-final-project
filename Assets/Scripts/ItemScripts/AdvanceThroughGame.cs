@@ -6,11 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class AdvanceThroughGame : MonoBehaviour
 {
+
+    public void Start()
+    {
+
+    }
+
     // this class is attached to the door hotspot which for this room (Lobby) is the "win condition";
     // it would make sense for each room to have it's own standalone file like
     public void OnMouseDown()
     {
-        Debug.Log("inside advanceThroughGame class");
+        //Debug.Log("inside advanceThroughGame class");
         string currentSelectedInventoryItem = ActiveInventoryItem.GetCurrentActiveInventoryItem();
 
         if(currentSelectedInventoryItem == "")
@@ -21,7 +27,7 @@ public class AdvanceThroughGame : MonoBehaviour
         {
             if (currentSelectedInventoryItem == "Keycard")
             {
-                Debug.Log("yahoo. You win the room");
+                //Debug.Log("yahoo. You win the room");
                 // advance to next scene
                 SceneManager.LoadScene("ToBeContinued");
             }
