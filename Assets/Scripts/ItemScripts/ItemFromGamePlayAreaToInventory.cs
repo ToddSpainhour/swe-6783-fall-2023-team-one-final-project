@@ -14,7 +14,7 @@ public class ItemFromGamePlayAreaToInventory : MonoBehaviour
 
     public void TransitionKeycardFromGamePlayAreaToInventory()
     {
-        Debug.Log("TransitionKeycardFromGamePlayAreaToInventory() in ItemFromGameplayAreaToInventory");
+        //Debug.Log("TransitionKeycardFromGamePlayAreaToInventory() in ItemFromGameplayAreaToInventory");
         KeycardFromPlayArea.SetActive(false);
         KeycardInInventory.SetActive(true);
     }
