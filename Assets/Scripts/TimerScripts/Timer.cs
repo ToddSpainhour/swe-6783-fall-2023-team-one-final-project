@@ -23,4 +23,9 @@ public class Timer : MonoBehaviour
         string formattedTime = time.ToString("mm':'ss");
         return formattedTime;
     }
+
+    public void ResetTotalTimeToFinish()
+    {
+        totalTimeToFinish = 0f;
+    }
 }
