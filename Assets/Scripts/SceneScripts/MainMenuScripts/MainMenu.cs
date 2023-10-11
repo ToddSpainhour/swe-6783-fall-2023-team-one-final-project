@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToBeContinuedButtonScript : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-
-    public void LoadMainMenu()
+    public void PlayGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("Lobby");
     }
 
     public void QuitGame()
     {
-        Debug.Log("application quitting...");
+        Debug.Log("quitting game...");
         Application.Quit();
     }
 }
