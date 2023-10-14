@@ -163,6 +163,72 @@ Transform:
   - {fileID: 980224068}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &516790353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 516790355}
+  - component: {fileID: 516790354}
+  - component: {fileID: 516790356}
+  m_Layer: 0
+  m_Name: OrientationRoomManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &516790354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516790353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edbc8a81667f4dd4aba719b8f547d296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tvScreenOff: {fileID: 545436328}
+  breakerBoxClosed: {fileID: 808219043}
+  breakerBoxOpen: {fileID: 1918016514}
+  elevatorClosed: {fileID: 1043195368}
+  elevatorOpen: {fileID: 980224067}
+  changePaperColorScript: {fileID: 1451677450}
+--- !u!4 &516790355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516790353}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.011576157, y: 0.30559027, z: -7.219269}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &516790356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 516790353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40970b24d95150543a87aac926db15b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerOffColor: {r: 0, g: 0, b: 0, a: 0}
+  powerOnColor: {r: 0, g: 0, b: 0, a: 0}
+  paperTexture: {fileID: 0}
 --- !u!1 &545436328
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,6 +835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451677448}
   - component: {fileID: 1451677449}
+  - component: {fileID: 1451677450}
   m_Layer: 0
   m_Name: PaperTexture
   m_TagString: Untagged
@@ -843,6 +910,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1451677450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451677447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40970b24d95150543a87aac926db15b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerOffColor: {r: 0.26415092, g: 0.25542894, b: 0.25542894, a: 1}
+  powerOnColor: {r: 0.9137255, g: 0.89411765, b: 0.89411765, a: 1}
+  paperTexture: {fileID: 1451677449}
 --- !u!1 &1814671834
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,3 +1099,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 1022948811}
   - {fileID: 125526043}
+  - {fileID: 516790355}
