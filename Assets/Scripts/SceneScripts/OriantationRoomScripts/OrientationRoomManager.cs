@@ -26,6 +26,7 @@ public class OrientationRoomManager : MonoBehaviour
 
 
     public ChangePaperColor changePaperColorScript;
+    public SparksForBreakerBox sparksForBreakerBoxScript;
 
     void Start()
     {
@@ -54,6 +55,8 @@ public class OrientationRoomManager : MonoBehaviour
         breakerBoxOpenHotspot.SetActive(true);
         // show open breaker box art asset
         breakerBoxOpen.SetActive(true);
+
+        sparksForBreakerBoxScript.ChangeBreakerBoxSparksColor();
 
 
         // harcoded was to power room back up; this action will be player controlled
