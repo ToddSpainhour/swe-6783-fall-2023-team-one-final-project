@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 public class SparksForBreakerBox : MonoBehaviour
 {
     public SpriteRenderer breakerBoxSparks;
+    //public GameObject sparksGameObject;
     //Color tmp.a = 0f;
 
     void Start()
@@ -44,4 +45,9 @@ public class SparksForBreakerBox : MonoBehaviour
         // recursive call
         Invoke("ChangeBreakerBoxSparksColor", randomValue);
     }
+
+    //public void TurnOffSparks()
+    //{
+    //    sparksGameObject.SetActive(false);
+    //}
 }

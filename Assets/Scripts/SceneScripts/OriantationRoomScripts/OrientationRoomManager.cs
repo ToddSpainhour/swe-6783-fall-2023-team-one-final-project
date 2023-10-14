@@ -27,6 +27,7 @@ public class OrientationRoomManager : MonoBehaviour
 
     public ChangePaperColor changePaperColorScript;
     public SparksForBreakerBox sparksForBreakerBoxScript;
+    public GameObject sparks;
 
     void Start()
     {
@@ -78,5 +79,7 @@ public class OrientationRoomManager : MonoBehaviour
 
         tvOnHotspot.SetActive(true);
         tvOffHotspot.SetActive(false);
+
+        sparks.SetActive(false);
     }
 }

@@ -500,6 +500,7 @@ MonoBehaviour:
   elevatorOpenHotspot: {fileID: 953859443}
   changePaperColorScript: {fileID: 1451677450}
   sparksForBreakerBoxScript: {fileID: 767154561}
+  sparks: {fileID: 767154559}
 --- !u!4 &516790355
 Transform:
   m_ObjectHideFlags: 0
