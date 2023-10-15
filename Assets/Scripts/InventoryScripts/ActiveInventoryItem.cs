@@ -11,16 +11,12 @@ public static class ActiveInventoryItem
 
     public static void SetCurrentActiveInventoryItem(string passedInValue)
     {
-        //Debug.Log("Setting CurrentActiveInventoryItem : " + passedInValue);
         currentActiveInventoryItem = passedInValue;
-
-        //Debug.Log("lets see what is gets... " + GetCurrentActiveInventoryItem());
     }
 
 
     public static string GetCurrentActiveInventoryItem()
     {
-        Debug.Log("getting the currentActiveInvenotryItem");
         string valueToReturn = currentActiveInventoryItem;
         return valueToReturn;
     }

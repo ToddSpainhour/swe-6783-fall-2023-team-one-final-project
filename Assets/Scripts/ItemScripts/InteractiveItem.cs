@@ -48,7 +48,6 @@ public class NewBehaviourScript : MonoBehaviour
             } 
             else if(this.name == "GlovesInGameArea")
             {
-                Debug.Log("InteractiveItem.cs mouseUp for gloves");
                 glovesToInventoryScript.TransitionGlovesFromGamePlayAreaToInventory();
             }
         }

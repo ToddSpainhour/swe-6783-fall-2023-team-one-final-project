@@ -67,19 +67,14 @@ public class OrientationRoomManager : MonoBehaviour
     public void PowerUpOrientationRoom()
     {
         changePaperColorScript.MakePaperTextureNormalBrightness();
-
         elevatorClosed.SetActive(false);
         elevatorClosedHotspot.SetActive(false);
-
         elevatorOpen.SetActive(true);
         elevatorOpenHotspot.SetActive(true);
-
         tvScreenOff.SetActive(false);
         tvScreenOn.SetActive(true);
-
         tvOnHotspot.SetActive(true);
         tvOffHotspot.SetActive(false);
-
         sparks.SetActive(false);
     }
 }

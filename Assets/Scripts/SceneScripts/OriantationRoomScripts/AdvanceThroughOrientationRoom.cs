@@ -5,38 +5,27 @@ using UnityEngine.SceneManagement;
 
 public class AdvanceThroughOrientationRoom : MonoBehaviour
 {
-    //OrientationRoomManager orientationRoomManagerScript;
+    OrientationRoomManager orientationRoomManagerScript;
 
     public void Start()
     {
-        //Debug.Log("AdvanceThroughOrientationRoom script just started");
-       
-
+        orientationRoomManagerScript = FindObjectOfType<OrientationRoomManager>();
     }
 
 
     public void OnMouseDown()
     {
-        Debug.Log("on mouse up AdvanceThroughOrientationRoom");
-
         string currentSelectedInventoryItem = ActiveInventoryItem.GetCurrentActiveInventoryItem();
-        Debug.Log("currentSelectedInventoryItem: " + currentSelectedInventoryItem);
 
         if (currentSelectedInventoryItem == "")
         {
-            //Debug.Log("wait... currentSelectedInventoryItem was an empy string");
             return;
         }
         else
         {
-            Debug.Log("currentSelectedInventoryItem was NOT an empy string");
-
             if (currentSelectedInventoryItem == "Gloves")
             {
-                Debug.Log("You fixed the power!");
-                
-                // get into OrientationRoomManager and run the method below
-                //orientationRoomManagerScript.PowerUpOrientationRoom();
+                orientationRoomManagerScript.PowerUpOrientationRoom();
             }
         }
     }
