@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public static class ActiveInventoryItem
 {
 
-    public static string currentActiveInventoryItem;
+    public static string currentActiveInventoryItem = "";
 
 
     public static void SetCurrentActiveInventoryItem(string passedInValue)

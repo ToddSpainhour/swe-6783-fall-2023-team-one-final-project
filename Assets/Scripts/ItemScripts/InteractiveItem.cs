@@ -15,6 +15,7 @@ public class NewBehaviourScript : MonoBehaviour
     public GameObject DynamicItemName;
     public GameObject DynamicItemDescription;
     public ItemFromGamePlayAreaToInventory itemFromGamePlayAreaToInventoryScript;
+    public GlovesToInventory glovesToInventoryScript;
 
 
     // displays dynamicItemName
@@ -44,6 +45,10 @@ public class NewBehaviourScript : MonoBehaviour
             if(this.name == "keycard-from-play-area")
             {
                 itemFromGamePlayAreaToInventoryScript.TransitionKeycardFromGamePlayAreaToInventory();
+            } 
+            else if(this.name == "GlovesInGameArea")
+            {
+                glovesToInventoryScript.TransitionGlovesFromGamePlayAreaToInventory();
             }
         }
     }

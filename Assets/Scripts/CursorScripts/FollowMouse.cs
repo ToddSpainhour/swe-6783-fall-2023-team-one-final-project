@@ -20,7 +20,12 @@ public class FollowMouse : MonoBehaviour
     {
         this.enabled = true;
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
+
+        // this worked for Lobby but it's causing issues here
+        //mousePosition.z = Camera.main.transform.position.z + Camera.main.nearClipPlane;
+
+        // hardcoding it worked i think
+        mousePosition.z = -1.5f;
         transform.position = mousePosition;
     }
 }

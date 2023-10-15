@@ -29,7 +29,7 @@ public class AdvanceThroughGame : MonoBehaviour
             {
                 //Debug.Log("yahoo. You win the room");
                 // advance to next scene
-                SceneManager.LoadScene("ToBeContinued");
+                SceneManager.LoadScene("OrientationRoom");
             }
         }
 
