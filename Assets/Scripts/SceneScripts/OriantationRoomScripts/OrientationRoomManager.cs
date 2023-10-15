@@ -31,7 +31,7 @@ public class OrientationRoomManager : MonoBehaviour
 
     void Start()
     {
-        Invoke("PowerDownOrientationRoom", 10f);
+        Invoke("PowerDownOrientationRoom", 3f);
     }
 
     public void PowerDownOrientationRoom()
@@ -61,7 +61,7 @@ public class OrientationRoomManager : MonoBehaviour
 
 
         // harcoded was to power room back up; this action will be player controlled
-        Invoke("PowerUpOrientationRoom", 4f);
+        // Invoke("PowerUpOrientationRoom", 4f);
     }
 
     public void PowerUpOrientationRoom()

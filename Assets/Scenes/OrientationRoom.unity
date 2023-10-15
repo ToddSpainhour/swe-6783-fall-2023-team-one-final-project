@@ -149,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 125526042}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 681.8607, y: 231.6791, z: -7.8590508}
+  m_LocalPosition: {x: 681.8607, y: 231.6791, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -193,8 +193,8 @@ GameObject:
   - component: {fileID: 131806660}
   - component: {fileID: 131806659}
   - component: {fileID: 131806662}
-  - component: {fileID: 131806661}
   - component: {fileID: 131806663}
+  - component: {fileID: 131806661}
   m_Layer: 0
   m_Name: GlovesInInventory
   m_TagString: Untagged
@@ -263,7 +263,7 @@ Transform:
   m_GameObject: {fileID: 131806658}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.29, y: -4.22, z: -9}
+  m_LocalPosition: {x: -6.92, y: -4.08, z: 0}
   m_LocalScale: {x: 0.63403213, y: 0.61138684, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -333,7 +333,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 9.05, y: 0, z: 2.06, w: 2.85}
-    pivot: {x: 0.7745477, y: 0.2354006}
+    pivot: {x: 0.71092504, y: 0.26919556}
     oldSize: {x: 12.8, y: 5}
     newSize: {x: 12.8, y: 5}
     adaptiveTilingThreshold: 0.5
@@ -538,7 +538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &465226613
 Transform:
   m_ObjectHideFlags: 0
@@ -704,7 +704,7 @@ Transform:
   m_GameObject: {fileID: 516790353}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.011576157, y: 0.30559027, z: -7.219269}
+  m_LocalPosition: {x: 0.011576157, y: 0.30559027, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1034,8 +1034,8 @@ Transform:
   m_GameObject: {fileID: 767154559}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -687.6, y: -231.2, z: -1.25}
-  m_LocalScale: {x: 130.5, y: 245.9, z: 1}
+  m_LocalPosition: {x: -687.56, y: -231.2, z: -0.25}
+  m_LocalScale: {x: 110.925, y: 205.94124, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 125526043}
@@ -1164,6 +1164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 770030564}
+  - component: {fileID: 770030565}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -1187,6 +1188,20 @@ Transform:
   - {fileID: 131806660}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770030565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770030563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ad642930b56794a8e8d66abd059851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorCircleTransparentWhite: {fileID: 2800000, guid: a8f1e8dd79333304887fab2bc2137eff, type: 3}
+  cursorPlusSignTransparentWhite: {fileID: 2800000, guid: 4f0ef71d2c6fcfa4aa39d6ebdf9fa4eb, type: 3}
 --- !u!1 &808219043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 808371709}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -679.55, y: -231.01, z: -1.25}
+  m_LocalPosition: {x: -679.55, y: -231.01, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1399,7 +1414,7 @@ Transform:
   m_GameObject: {fileID: 824766373}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -681.84, y: -231.73, z: -1.25}
+  m_LocalPosition: {x: -681.84, y: -231.73, z: 0}
   m_LocalScale: {x: 1.48, y: 1.43, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1568,7 +1583,7 @@ Transform:
   m_GameObject: {fileID: 934427338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -676.52, y: -229.95, z: -1.25}
+  m_LocalPosition: {x: -676.52, y: -229.95, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1654,6 +1669,7 @@ GameObject:
   - component: {fileID: 953859444}
   - component: {fileID: 953859445}
   - component: {fileID: 953859446}
+  - component: {fileID: 953859447}
   m_Layer: 0
   m_Name: ElevatorOpenHotspot
   m_TagString: Untagged
@@ -1670,7 +1686,7 @@ Transform:
   m_GameObject: {fileID: 953859443}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -676.52, y: -229.95, z: -1.25}
+  m_LocalPosition: {x: -676.52, y: -229.95, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1745,6 +1761,18 @@ MonoBehaviour:
   DynamicItemDescription: {fileID: 663022616}
   itemFromGamePlayAreaToInventoryScript: {fileID: 0}
   glovesToInventoryScript: {fileID: 0}
+--- !u!114 &953859447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953859443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225cf00f41c4a3047b068b49377d3f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961033528
 GameObject:
   m_ObjectHideFlags: 0
@@ -2086,7 +2114,7 @@ Transform:
   m_GameObject: {fileID: 1226159294}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -687.34, y: -230.22, z: -1.25}
+  m_LocalPosition: {x: -687.34, y: -230.22, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2188,7 +2216,7 @@ Transform:
   m_GameObject: {fileID: 1365669280}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -679.55, y: -231.01, z: -1.25}
+  m_LocalPosition: {x: -679.55, y: -231.01, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2290,7 +2318,7 @@ Transform:
   m_GameObject: {fileID: 1451677447}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -681.8, y: -231.72, z: -1}
+  m_LocalPosition: {x: -681.8, y: -231.72, z: 1}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2389,7 +2417,7 @@ Transform:
   m_GameObject: {fileID: 1814671834}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -681.8, y: -231.4, z: 0}
+  m_LocalPosition: {x: -681.8, y: -231.4, z: 1.5}
   m_LocalScale: {x: 1920, y: 1080, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2457,7 +2485,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1829912471}
   - component: {fileID: 1829912473}
-  - component: {fileID: 1829912472}
+  - component: {fileID: 1829912474}
+  - component: {fileID: 1829912475}
   m_Layer: 0
   m_Name: BreakerBoxOpenHotspot
   m_TagString: Untagged
@@ -2474,31 +2503,12 @@ Transform:
   m_GameObject: {fileID: 1829912470}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -687.34, y: -230.22, z: -1.25}
+  m_LocalPosition: {x: -687.32, y: -230.22, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 961033529}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1829912472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829912470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686e5f418eb1a4b44a47361fb0e46999, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Breaker Box with sparks
-  itemDescription: Open
-  isInventoryEligible: 0
-  DynamicItemName: {fileID: 203089426}
-  DynamicItemDescription: {fileID: 663022616}
-  itemFromGamePlayAreaToInventoryScript: {fileID: 0}
-  glovesToInventoryScript: {fileID: 0}
 --- !u!60 &1829912473
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2546,11 +2556,42 @@ PolygonCollider2D:
     - - {x: -0.19107914, y: 0.34714615}
       - {x: -0.91921, y: 0.40455642}
       - {x: -0.8584809, y: -2.2261875}
-      - {x: 0.43596458, y: -1.9486806}
-      - {x: 1.4434539, y: -2.2353256}
-      - {x: 1.4071145, y: 0.37533057}
-      - {x: 0.39374304, y: 0.29309386}
+      - {x: -0.43621397, y: -2.1331797}
+      - {x: 0.4238392, y: -2.0218356}
+      - {x: 0.38957095, y: 0.2751081}
+      - {x: -0.17652702, y: 0.3098666}
   m_UseDelaunayMesh: 0
+--- !u!114 &1829912474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829912470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225cf00f41c4a3047b068b49377d3f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1829912475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829912470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686e5f418eb1a4b44a47361fb0e46999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Open Breaker Box
+  itemDescription: That looks dangerous.
+  isInventoryEligible: 0
+  DynamicItemName: {fileID: 203089426}
+  DynamicItemDescription: {fileID: 663022616}
+  itemFromGamePlayAreaToInventoryScript: {fileID: 0}
+  glovesToInventoryScript: {fileID: 0}
 --- !u!1 &1909152463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,7 +2673,7 @@ Transform:
   m_GameObject: {fileID: 1909152463}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.11065976, w: 0.9938584}
-  m_LocalPosition: {x: -689.44073, y: -233.01909, z: -1.1409492}
+  m_LocalPosition: {x: -689.44073, y: -233.01909, z: -1}
   m_LocalScale: {x: 0.8000001, y: 0.7118751, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2749,6 +2790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1918016515}
   - component: {fileID: 1918016516}
+  - component: {fileID: 1918016517}
   m_Layer: 0
   m_Name: BreakerBoxOpen
   m_TagString: Untagged
@@ -2765,7 +2807,7 @@ Transform:
   m_GameObject: {fileID: 1918016514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -682.14, y: -231.76, z: -1.25}
+  m_LocalPosition: {x: -687, y: -231.16, z: -1.25}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2823,6 +2865,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1918016517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918016514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225cf00f41c4a3047b068b49377d3f45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

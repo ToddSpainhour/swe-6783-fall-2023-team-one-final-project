@@ -33,9 +33,8 @@ public class OrientationRoomInventoryItem : MonoBehaviour
 
     public void OnMouseDown()
     {
-        if (itemName == "GlovesInInventory")
+        if(itemName == "Gloves")
         {
-            Debug.Log("onMouseDown for GlovesInInventory");
             ActiveInventoryItem.SetCurrentActiveInventoryItem("Gloves");
             AttachGlovesToCursor();
         }
@@ -45,7 +44,7 @@ public class OrientationRoomInventoryItem : MonoBehaviour
     public void OnMouseUp()
     {
         DynamicItemDescription.GetComponent<UnityEngine.UI.Text>().text = itemDescription;
-        AttachGlovesToCursor();
+        //AttachGlovesToCursor();
     }
 
 
