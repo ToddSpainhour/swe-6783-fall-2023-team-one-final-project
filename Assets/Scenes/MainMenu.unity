@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb79d1e9bada47b4cad94a59ad960995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isStillPlaying: 1
+  isStillPlaying: 0
 --- !u!114 &1176684484
 MonoBehaviour:
   m_ObjectHideFlags: 0
