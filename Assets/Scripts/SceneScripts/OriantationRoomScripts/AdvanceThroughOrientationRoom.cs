@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class AdvanceThroughOrientationRoom : MonoBehaviour
 {
-
-    //public OrientationRoomManager orientationRoomManagerScript;
+    //OrientationRoomManager orientationRoomManagerScript;
 
     public void Start()
     {
         //Debug.Log("AdvanceThroughOrientationRoom script just started");
+       
+
     }
+
 
     public void OnMouseDown()
     {
@@ -32,12 +34,10 @@ public class AdvanceThroughOrientationRoom : MonoBehaviour
             if (currentSelectedInventoryItem == "Gloves")
             {
                 Debug.Log("You fixed the power!");
-                // advance to next scene
-                //SceneManager.LoadScene("ToBeContinued");
+                
+                // get into OrientationRoomManager and run the method below
                 //orientationRoomManagerScript.PowerUpOrientationRoom();
             }
         }
-
-
     }
 }

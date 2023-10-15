@@ -31,7 +31,7 @@ public class OrientationRoomManager : MonoBehaviour
 
     void Start()
     {
-        Invoke("PowerDownOrientationRoom", 3f);
+        Invoke("PowerDownOrientationRoom", 10f);
     }
 
     public void PowerDownOrientationRoom()
