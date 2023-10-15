@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class AdvanceThroughOrientationRoom : MonoBehaviour
 {
     OrientationRoomManager orientationRoomManagerScript;
+    ClearInventoryForOrientationRoom clearInventoryScript;
 
     public void Start()
     {
         orientationRoomManagerScript = FindObjectOfType<OrientationRoomManager>();
+        clearInventoryScript = FindObjectOfType<ClearInventoryForOrientationRoom>();
     }
 
 
@@ -26,6 +28,7 @@ public class AdvanceThroughOrientationRoom : MonoBehaviour
             if (currentSelectedInventoryItem == "Gloves")
             {
                 orientationRoomManagerScript.PowerUpOrientationRoom();
+                clearInventoryScript.RemoveGlovesFromInventory();
             }
         }
     }
