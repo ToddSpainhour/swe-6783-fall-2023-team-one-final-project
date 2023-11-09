@@ -23,6 +23,7 @@ public class OrientationRoomManager : MonoBehaviour
 
     public GameObject elevatorOpen;
     public GameObject elevatorOpenHotspot;
+    public GameObject elevatorColor;
 
 
     public ChangePaperColor changePaperColorScript;
@@ -71,6 +72,7 @@ public class OrientationRoomManager : MonoBehaviour
         elevatorClosedHotspot.SetActive(false);
         elevatorOpen.SetActive(true);
         elevatorOpenHotspot.SetActive(true);
+        elevatorColor.SetActive(true);
         tvScreenOff.SetActive(false);
         tvScreenOn.SetActive(true);
         tvOnHotspot.SetActive(true);
