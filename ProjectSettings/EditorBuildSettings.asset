@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/OrientationRoom.unity
     guid: bd26671767f469f46adb470a1844e1ba
   - enabled: 1
+    path: Assets/Scenes/MuseumRoom.unity
+    guid: 2aa9e58cec54cae47a2703b7c197c4da
+  - enabled: 1
     path: Assets/Scenes/ToBeContinued.unity
     guid: aca3c81d26efd4c4a9f05ade2031e68c
   m_configObjects: {}
