@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class LeaveOrientationRoom : MonoBehaviour
+public class LeaveMuseumRoom : MonoBehaviour
 {
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
-        SceneManager.LoadScene("MuseumRoom");
+        SceneManager.LoadScene("ToBeContinued");
     }
 }
