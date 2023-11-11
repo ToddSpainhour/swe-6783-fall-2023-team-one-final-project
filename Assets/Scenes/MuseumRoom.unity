@@ -1222,6 +1222,7 @@ GameObject:
   - component: {fileID: 590888137}
   - component: {fileID: 590888136}
   - component: {fileID: 590888140}
+  - component: {fileID: 590888141}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1331,6 +1332,20 @@ MonoBehaviour:
   keyPadLight3: {fileID: 1989047847}
   keyPadLight4: {fileID: 1797005428}
   keyPadLight5: {fileID: 1123003617}
+--- !u!114 &590888141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590888135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ad642930b56794a8e8d66abd059851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorCircleTransparentWhite: {fileID: 2800000, guid: a8f1e8dd79333304887fab2bc2137eff, type: 3}
+  cursorPlusSignTransparentWhite: {fileID: 2800000, guid: 4f0ef71d2c6fcfa4aa39d6ebdf9fa4eb, type: 3}
 --- !u!1 &612743133
 GameObject:
   m_ObjectHideFlags: 0
@@ -3613,6 +3628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1756540985}
+  - component: {fileID: 1756540986}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -3644,6 +3660,20 @@ Transform:
   - {fileID: 1935883728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1756540986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756540984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ad642930b56794a8e8d66abd059851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorCircleTransparentWhite: {fileID: 2800000, guid: a8f1e8dd79333304887fab2bc2137eff, type: 3}
+  cursorPlusSignTransparentWhite: {fileID: 2800000, guid: 4f0ef71d2c6fcfa4aa39d6ebdf9fa4eb, type: 3}
 --- !u!1 &1763708348
 GameObject:
   m_ObjectHideFlags: 0
